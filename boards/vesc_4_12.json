@@ -1,0 +1,37 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DSTM32F405xx -DSTM32F4xx -DVESC -DVESC_4_12 -DHSE_VALUE=8000000 -DUSBCON -DPIO_FRAMEWORK_ARDUINO_ENABLE_CDC -DUSBD_USE_CDC",
+    "f_cpu": "168000000L",
+    "mcu": "stm32f405rg",
+    "product_line": "STM32F405xx",
+    "variant": "VESC_4_12"
+  },
+  "debug": {
+    "jlink_device": "STM32F405RG",
+    "openocd_target": "stm32f4x",
+    "svd_path": "STM32F40x.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube",
+    "libopencm3"
+  ],
+  "name": "STM32F405RG (128k RAM. 1024k Flash)",
+  "upload": {
+    "maximum_ram_size": 131072,
+    "maximum_size": 1048576,
+    "protocol": "stlink",
+    "protocols": [
+      "blackmagic",
+      "dfu",
+      "jlink",
+      "serial",
+      "stlink"
+    ]
+  },
+  "url": "https://vesc-project.com/",
+  "vendor": "Generic"
+}
