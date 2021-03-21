@@ -19,7 +19,7 @@
     "stm32cube",
     "libopencm3"
   ],
-  "name": "STM32F405RG (128k RAM. 1024k Flash)",
+  "name": "VESC 4.12 Motor Controller",
   "upload": {
     "maximum_ram_size": 131072,
     "maximum_size": 1048576,
